@@ -1,10 +1,14 @@
 module.exports = {
+  root: true,
   env: {
     node: true,
-    es6: true
+    browser: true,
+    es2021: true
   },
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 12,
+    sourceType: 'module',
+    parser: 'babel-eslint'
   },
   rules: {
     quotes: [2, 'single'],
@@ -17,12 +21,21 @@ module.exports = {
     'max-len': [1, 150, 2],
     'newline-per-chained-call': 0,
     'no-console': 1,
-    'no-mixed-operators': [2, {
-      groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['&&', '||']],
-      allowSamePrecedence: true
-    }],
+    'no-mixed-operators': [
+      2,
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['&&', '||']
+        ],
+        allowSamePrecedence: true
+      }
+    ],
     'no-param-reassign': 2,
-    'no-underscore-dangle': [2, { allowAfterThis: true, allowAfterSuper: false }],
+    'no-underscore-dangle': [
+      2,
+      { allowAfterThis: true, allowAfterSuper: false }
+    ],
     'object-curly-spacing': 2
   },
   extends: ['airbnb-base', 'prettier']

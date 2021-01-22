@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-rain",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "repository": "git@github.com:FearwareX/eslint-config-rain.git",
-  "author":"FearwareX",
+  "author": "FearwareX",
   "dependencies": {
     "eslint-config-airbnb": "*",
     "eslint-config-prettier": "*",
@@ -12,6 +12,8 @@
   },
   "devDependencies": {
     "eslint": "*",
-    "prettier": "*"
+    "prettier": "*",
+    "babel-eslint": "*",
+    "babel-plugin-import": "*"
   }
 }
