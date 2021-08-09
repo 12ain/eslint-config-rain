@@ -1,19 +1,18 @@
 {
   "name": "eslint-config-rain",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "基于AirBnb Javascript修改的ESLint配置",
   "main": "index.js",
   "license": "MIT",
   "repository": "git@github.com:FearwareX/eslint-config-rain.git",
-  "author": "FearwareX",
+  "author": "Rain <smalltime153@gmail.com>",
   "dependencies": {
-    "eslint-config-airbnb": "*",
+    "eslint-config-airbnb-base": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-import": "*"
   },
   "devDependencies": {
     "eslint": "*",
-    "prettier": "*",
-    "babel-eslint": "*",
-    "babel-plugin-import": "*"
+    "prettier": "*"
   }
 }
